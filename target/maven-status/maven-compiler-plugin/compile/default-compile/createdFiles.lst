@@ -1,0 +1,10 @@
+com/gylderia/gyldadvancements/Commands/GrantCommand.class
+com/gylderia/gyldadvancements/Events/QuitEvent.class
+com/gylderia/gyldadvancements/Gyldadvancements.class
+com/gylderia/gyldadvancements/AchievementManager.class
+com/gylderia/gyldadvancements/configOptions.class
+com/gylderia/gyldadvancements/Events/JoinEvent.class
+com/gylderia/gyldadvancements/Triggers.class
+com/gylderia/gyldadvancements/Events/MythicMobDeathEvent.class
+com/gylderia/gyldadvancements/Instances/Achievement.class
+com/gylderia/gyldadvancements/Manager/MythicManager.class

@@ -1,0 +1,33 @@
+root:
+  name: Exploration
+  icon: compass
+  texture: textures/block/stone.png
+  model_data: 0
+  description: Explorez le monde qui vous entoure
+  frame: TASK
+  visibility: ALWAYS
+  flags: SHOW_TOAST
+  x: 1
+  y: 1
+advancement1:
+  parent: root
+  name: spawn
+  icon: OAK_DOOR
+  model_data: 0
+  description: Découvrez le spawn !
+  frame: TASK
+  visibility: ALWAYS
+  flags: SHOW_TOAST
+  x: 2
+  y: 1
+advancement2:
+  parent: advancement1
+  name: spawn
+  icon: OAK_DOOR
+  model_data: 0
+  description: Découvrez le spawn !
+  frame: TASK
+  visibility: ALWAYS
+  flags: SHOW_TOAST
+  x: 2
+  y: 1
