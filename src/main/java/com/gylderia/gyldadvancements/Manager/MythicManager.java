@@ -1,16 +1,14 @@
 package com.gylderia.gyldadvancements.Manager;
 
 import com.gylderia.gyldadvancements.Events.MythicMobDeathEvent;
-import com.gylderia.gyldadvancements.Events.QuitEvent;
 import com.gylderia.gyldadvancements.Gyldadvancements;
 import eu.endercentral.crazy_advancements.advancement.Advancement;
 import io.lumine.mythic.api.mobs.MythicMob;
-import io.lumine.mythic.bukkit.MythicBukkit;
 import org.bukkit.Bukkit;
 
 public class MythicManager {
     public static boolean status;
-    private Gyldadvancements plugin;
+    private final Gyldadvancements plugin;
 
     public MythicManager(Gyldadvancements plugin) {
         status = true;

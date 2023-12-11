@@ -1,19 +1,15 @@
 package com.gylderia.gyldadvancements.Events;
 
 import com.gylderia.gyldadvancements.AchievementManager;
-import com.gylderia.gyldadvancements.Manager.MythicManager;
 import eu.endercentral.crazy_advancements.advancement.Advancement;
 import eu.endercentral.crazy_advancements.manager.AdvancementManager;
 import io.lumine.mythic.api.mobs.MythicMob;
-import io.lumine.mythic.core.mobs.MobType;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.PlayerJoinEvent;
 
 import java.util.HashMap;
-import java.util.List;
 
 
 public class MythicMobDeathEvent implements Listener {

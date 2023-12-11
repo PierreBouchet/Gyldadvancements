@@ -1,9 +1,6 @@
 package com.gylderia.gyldadvancements;
 
-import com.gylderia.gyldadvancements.Events.MythicMobDeathEvent;
 import com.gylderia.gyldadvancements.Manager.MythicManager;
-import com.sun.org.apache.xpath.internal.operations.Bool;
-import eu.endercentral.crazy_advancements.CrazyAdvancementsAPI;
 import eu.endercentral.crazy_advancements.JSONMessage;
 import eu.endercentral.crazy_advancements.NameKey;
 import eu.endercentral.crazy_advancements.advancement.Advancement;
@@ -14,24 +11,18 @@ import eu.endercentral.crazy_advancements.advancement.criteria.Criteria;
 import eu.endercentral.crazy_advancements.manager.AdvancementManager;
 import io.lumine.mythic.api.mobs.MythicMob;
 import io.lumine.mythic.bukkit.MythicBukkit;
-import io.lumine.mythic.core.mobs.MobType;
-import it.unimi.dsi.fastutil.Hash;
 import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.entity.Interaction;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.yaml.snakeyaml.Yaml;
-import sun.security.krb5.Config;
 
-import javax.naming.Name;
 import java.io.File;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Optional;
 
 public class AchievementManager {
     public static AdvancementManager manager;
@@ -74,11 +65,6 @@ public class AchievementManager {
         }
         data.put(configOptions.KEY, section.getName());
         return data;
-    }
-
-    private boolean checkAdvancement(ConfigurationSection section, Boolean isRoot) {
-
-        return false;
     }
 
     private void addAdvancement(Boolean isRoot, HashMap<configOptions, Object> data, File file) {

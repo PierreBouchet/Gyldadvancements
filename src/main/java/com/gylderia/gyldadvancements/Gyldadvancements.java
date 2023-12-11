@@ -2,25 +2,11 @@ package com.gylderia.gyldadvancements;
 
 import com.gylderia.gyldadvancements.Events.JoinEvent;
 import com.gylderia.gyldadvancements.Events.QuitEvent;
-import com.gylderia.gyldadvancements.Manager.MythicManager;
 import eu.endercentral.crazy_advancements.CrazyAdvancementsAPI;
-import eu.endercentral.crazy_advancements.JSONMessage;
-import eu.endercentral.crazy_advancements.NameKey;
-import eu.endercentral.crazy_advancements.advancement.*;
-import io.lumine.mythic.api.MythicPlugin;
-import io.lumine.mythic.bukkit.MythicBukkit;
-import net.md_5.bungee.api.chat.TextComponent;
 import org.bukkit.Bukkit;
-import org.bukkit.Material;
-import org.bukkit.entity.Item;
 import org.bukkit.entity.Player;
-import org.bukkit.event.Listener;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.w3c.dom.Text;
 
-import java.beans.EventHandler;
 import java.io.File;
 
 public final class Gyldadvancements extends JavaPlugin  {
@@ -86,7 +72,7 @@ public final class Gyldadvancements extends JavaPlugin  {
     public void onDisable() {
         //save for online players
         for (Player p : Bukkit.getOnlinePlayers()) {
-            manager.manager.saveProgress(p);
+            AchievementManager.manager.saveProgress(p);
         }
 
     }
