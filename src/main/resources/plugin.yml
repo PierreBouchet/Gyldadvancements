@@ -6,3 +6,6 @@ depend:
   - 'CrazyAdvancementsAPI'
 softdepend:
   - 'MythicMobs'
+  - 'WorldGuard'
+commands:
+  advancementreload:

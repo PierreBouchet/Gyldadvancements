@@ -49,6 +49,7 @@ public class AchievementManager {
     }
 
     public void loadAchievements(Player p) {
+        System.out.println("load data pour le joueur " + p);
         manager.loadProgress(p);
     }
 
@@ -84,7 +85,7 @@ public class AchievementManager {
         float yf = y.floatValue();
         display.setX(xf);
         display.setY(yf);
-        AdvancementFlag[] flags = AdvancementFlag.TOAST_AND_MESSAGE;
+        AdvancementFlag flags = AdvancementFlag.DISPLAY_MESSAGE;
 
         if ((Integer) data.get(configOptions.MODEL_DATA) != 0) {
             ItemMeta meta = icon.getItemMeta();
@@ -130,7 +131,6 @@ public class AchievementManager {
                 advancement.setCriteria(new Criteria(number));
             }
         }
-
     }
 
     public void loadData(File dir) {
@@ -160,5 +160,6 @@ public class AchievementManager {
             }
         }
     }
+
 
 }

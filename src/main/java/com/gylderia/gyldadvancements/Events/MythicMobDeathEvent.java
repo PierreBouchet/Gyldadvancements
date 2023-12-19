@@ -36,6 +36,7 @@ public class MythicMobDeathEvent implements Listener {
                 System.out.println("good mob");
                 int progress = manager.getCriteriaProgress(p, advancement);
                 manager.setCriteriaProgress(p, advancement, progress + 1);
+                manager.saveProgress(p, advancement);
             }
         }
     }
